@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuarta sesión del curso de introducción a la programación con JavaScript edición de Septiembre 2024 de la fundación
+        Itgrarte</title>
+    <meta name="title"
+        content="Cuarta sesión del curso De introducción a la programación con JavaScript edición Septiembre 2024">
+    <meta name="description"
+        content="Cuarta sesión del curso de introducción a la programación con JavaScript. Impartido por Ronny González. Bucles.">
+    <meta name="keywords" content="curso,javascript,js,itgrarte,Ronny González">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="author" content="Ronny González">
+
+    <link rel="stylesheet" href="./assets/HojaEstilos.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+</head>
+
+<body>
+    <h1>Cuarta sesión</h1>
+    <secttion class="section">
+        <article>
+            <h2>Bucles</h2>
+            <p>Los bucles, o ciclos, son bloques de código que se repetirán si una condición es verdadera. Este
+                se repetirá una vez, varias, o puede que ninguna dependiendo.</p>
+            <p><q>Puedes pensar en un bucle como una versión computarizada del juego en la que le dices a
+                    alguien
+                    que dé X pasos en una dirección y luego Y pasos en otra</q>.</p>
+            <p>En los lenguajes de programación, tenemos 2 tipos de bucles. Deteminados e indeterminados.</p>
+            <h3>Bucles determinados</h3>
+            <p>Este tipo de bucle permite establecer el número de veces que se repetirá un bloque de código.
+                Todo
+                hasta que la condición que lo originó sea falsa. Dentro de este tenemos:</p>
+            <h3>Bucle for</h3>
+            <p>Empezamos con el for. Este sirve principalmente para recorrer un array, pero tiene muchos usos.
+                Este
+                repetirá un bloque de código hasta que su condición sea falsa.</p>
+            <p><q>Un ciclo for se repite hasta que una condición especificada se evalúe como false. El bucle for
+                    de
+                    JavaScript es similar al bucle for de Java y C. Una declaración for tiene el siguiente
+                    aspecto:
+                    for ([expresiónInicial]; [expresiónCondicional]; [expresiónDeActualización])
+                    instrucción</q>.</p>
+            <p>Cuando se ejecuta un bucle for, ocurre lo siguiente:</p>
+            <ol>
+                <li>Se ejecuta la expresión de iniciación (expresión Inicial), si existe. Esta expresión
+                    normalmente
+                    inicia uno o más contadores de bucle, pero la sintaxis permite una expresión de cualquier
+                    grado
+                    de complejidad. Esta expresión también puede declarar variables.</li>
+                <li>Se evalúa la expresión condicional. Si el valor es verdadero, se ejecutan las instrucciones
+                    del
+                    bucle. Si el valor de condición es falso, el bucle for termina. Si la expresión condición se
+                    omite por completo, se supone que la condición es verdadera.</li>
+                <li>Se ejecuta la instrucción. Para ejecutar varias instrucciones, usa una declaración de bloque
+                    ({
+                    ... }) para agrupar esas declaraciones.</li>
+                <li>Si está presente, se ejecuta la expresión de actualización.</li>
+                <li>El control regresa al paso 2.</li>
+            </ol>
+            <p>Visita el siguiente enlace para más</p>
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration"
+                target="_blank">Bucles e iteración</a>
+
+            <h3>Bucles indeterminados</h3>
+            <p>Los bucles indeterminados principalmente, se caracterizan por no tener un número de veces en las
+                que
+                se repetirán.</p>
+            <p>Puede que el bucle no se ejecute nunca, debido a que su condición es falsa. También puede que se
+                ejecute varias veces o infinitamente. Con esto último hay que tener <strong>cuidado</strong>,
+                debido
+                a que puede causar un alto consumo de recursos en nuestros equipos. Dentro de los bucles
+                indeterminados tenemos:</p>
+            <h3>Bucle while y do while</h3>
+            <p>El bucle while o (mientras) se ejecutará mientras su condición sea verdadera. Por ejemplo tienes
+                una
+                variable que está inicializada en 1 y se incrementará en 1 mientras sea menor a 10.</p>
+            <p>Cuando el código llegue a la décima iteración o la variable llegue a dicho valor especificado en
+                la
+                condición del bucle, preguntará:</p>
+            <p>¿Variable es menor a 10? Recibiendo un false porque la variable no es menor a 10. Es igual. Por
+                ello,
+                el bucle detiene la iteración y el programa sale de su ejecución.</p>
+            <p>Puede que el programa no entre en el bucle, y por consecuencia este no se llegue a ejecutar
+                nunca.
+                razón por la cual existe el siguiente bucle:</p>
+            <p>El bucle do while es similar al bucle while. Solo que poniendo esta instrucción, el programa
+                entrará
+                en el bucle al menos una vez. Si se cumple la condición, continuará iterando y repitiéndose.</p>
+            <p>Ejemplo: Tenemos una variable llamada i que está inicializada en 0. Esta se incrementará de 1 en
+                1
+                mientras sea menor a 5. con el do while te aseguras de que el flujo de ejecución entre al menos
+                una
+                vez a tu código y si la condición es verdadera se continuará incrementando el valor de i, de lo
+                contrario, saldrá del ciclo y detendrá su ejecución. Para más detalles visita:</p>
+            <a href="https://desarrolloweb.com/articulos/567.php" target="_blank">Bucles (while and do while)
+                (desarrolloweb)</a>
+            <h3>Instrucciones break y continue</h3>
+            <p>En ocasiones, necesitamos que nuestro código en los ciclos detenga su ejecución si cierta
+                condición
+                se da o si encuentra algún valor. En estos casos se suelen utilizar estass instrucciones.</p>
+            <ul>
+                <li>Break: detiene el bucle en una iteración determinada. si el programa encuentra la
+                    instrucción,
+                    se sale del bucle y continúa con las demás líneas de código.</li>
+                <li>Continue: Esta instrucción detiene la iteración del bucle, pero no sale de él. sino que
+                    regresa
+                    a la condición sin ejecutar las líneas que se encuentran por debajo de la palabra continue.
+                    Ejemplo: si tenemos una variable que se incrementa, y dada una condición usaremos la
+                    instrucción, y luego el incremento, este no sucede.</li>
+            </ul>
+            <p>Consulta más información en el siguiente enlace</p>
+            <a href="https://desarrolloweb.com/articulos/568.php" target="_blank">Instrucciones break y
+                continue</a>
+<!--             <h3>Enlaces importantes</h3>
+            <div>
+                <ul>
+                    <li>
+                        <a href="codigos/tema4/bucles.js" target="_blank">Accede al código</a>
+                    </li>
+                    <li>
+                        <a href="https://classroom.google.com/c/Njc3NjUwODMwMzkz/a/NjgwNDk4NDQ4NjI3/details" target="_blank">Accede a la tarea</a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/13pJZB9_Aa7qeT8Mchv6ttC9d62m-PXHH/view?usp=sharing" target="_blank">Accede al video de la clase</a>
+                    </li>
+                </ul>
+            </div>
+ -->
+        </article>
+    </secttion>
+
+    <footer>
+        <p>
+            Este contenido está bajo la licencia Creative commons 4.0.
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">Términos de la licencia</a>
+        </p>
+    </footer>    
+</body>
+
+</html>

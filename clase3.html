@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercera sesión del curso de introducción a la programación con JavaScript edición de Septiembre 2024 de la
+        fundación Itgrarte</title>
+    <meta name="title"
+        content="Tercera sesión del curso De introducción a la programación con JavaScript edición Septiembre 2024">
+    <meta name="description"
+        content="Tercera sesión del curso de introducción a la programación con JavaScript. Impartido por Ronny González. condicionales.">
+    <meta name="keywords" content="curso,javascript,js,itgrarte,Ronny González">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="author" content="Ronny González">
+
+    <link rel="stylesheet" href="./assets/HojaEstilos.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+</head>
+
+<body>
+    <h1>Tercera sesión</h1>
+    <section class="section">
+        <article>
+            <h2>Estructuras de control de flujo</h2>
+            <h3>Condicionales</h3>
+            <p><q>En cualquier lenguaje de programación, el código necesita realizar decisiones y llevar a cabo
+                    diferentes acciones dependiendo de distintas entradas. Por ejemplo, en un juego, si el
+                    número de
+                    vidas del jugador es 0, entonces se termina el juego. En una aplicación del clima,
+                    si se observa en la mañana, se despliega una gráfica del amanecer; muestra estrellas y una
+                    luna
+                    si es de noche</q>.</p>
+            <p>Las condicionales, son un bloque de código muy importante en nuestros programas, que nos servirán
+                para evaluar una serie de comportamientos en el código.</p>
+            <p>Otro ejemplo es un club en el que solo entrarán personas Septiembreres de 18 años. En este, si la
+                persona
+                no cumple la condición su entrada al lugar será rechazada.</p>
+            <p>Ese es el trabajo de las condicionales. Evaluar una serie de parámetros a cumplir para tomar una
+                decisión y realizar diferentes acciones en el código.</p>
+            <p>Estas condicionales son:</p>
+            <h3>Condicional if else</h3>
+            <p>En cada lenguaje de programación, contamos con la estructura if else. Esta contiene una parte
+                verdadera y una falsa.</p>
+            <p>El programa entra en el if si la condición se cumple y si no se cumple pasa al else y ejecuta lo
+                que
+                hay en su interior. Estas líneas de código van entre llaves, aunque JavaScript permite la
+                creación
+                de estas sin las llaves solamente si contienen una línea de código.</p>
+            <p>Dentro de JavaScript, un if o varios pueden ir sin el else, pero el else no puede ir sin un
+                correspondiente if.</p>
+            <p>La siguiente lista muestra el flujo de ejecución de una condicional if else.</p>
+            <ol>
+                <li>La palabra clave if seguida de unos paréntesis.</li>
+                <li>Una condición a probar, puesta dentro de los paréntesis (típicamente "¿es este valor Septiembrer
+                    que
+                    este otro valor?", o "¿existe este valor?"). Esta condición usará los operadores de
+                    comparación
+                    y retorna un valor true o false (verdadero o falso).</li>
+                <li>Un conjunto de llaves, en las cuales tenemos algún código — puede ser cualquier código que
+                    deseemos, código que se ejecutará sólamente si la condición retorna true.</li>
+                <li>La palabra clave else.</li>
+                <li>Otro conjunto de llaves, dentro de las cuales tendremos otro código — puede ser cualquier
+                    código
+                    que deseemos, y sólo se ejecutará si la condición no es true. Este código es fácil de leer —
+                    está diciendo "si (if) la condición retorna verdadero (true), entonces ejecute el código A,
+                    sino
+                    (else) ejecute el código B"</li>
+            </ol>
+
+            <h3>Condicionales anidadas (else if)</h3>
+            <p>En ocasiones, necesitamos evaluar varios caminos a tomar. Razón por la cual tendremos que
+                encadenar o
+                anidar condiciones.</p>
+            <p>Para esto tenemos la estructura else if en la que evaluamos si se cumplen o no las condiciones
+                establecidas.</p>
+            <ol>
+                <li>If: el programa evalúa la primera condición. De cumplirse, pasa a ejecutar las líneas dentro
+                    de
+                    este primer bloque.</li>
+                <li>Else if: evalúa la segunda condición si la primera no se cumplió.</li>
+                <li>Else if: Tendremos otras evaluaciones else if de ser necesario.</li>
+                <li>Else: De no cumplirse las condiciones anteriores, el flujo de ejecución del programa entrará
+                    aquí y ejecutará el código entre las llaves.</li>
+            </ol>
+            <p>Podemos escribir una condicional dentro de otra tanto como queramos o necesitemos, Esto no es una
+                buena práctica, por lo que las condicionales anidadas nos ayudan a que nuestro código se vea más
+                limpio.</p>
+            <h3>Condicionales anidadas con operadores lógicos</h3>
+            <p>Conocidas por ser algo más complejas de manejar en un proyecto, las condicionales múltiples
+                utilizan
+                operadores lógicos como and (&&), not (!) y or (||), para evaluar varias condiciones en un solo
+                if.
+                Veamos un ejemplo:</p>
+            <p>Si vas al médico y este te receta algún medicamento para alguna enfermedad, debes cumplir el
+                siguiente requerimiento. Para tomarte el medicamento sin sufrir efectos secundarios debes tener
+                entre 18 y 30 años.</p>
+            <p>Si eres menor, la medicina te causará alergias, y si eres Septiembrer de 30 te quitará el apetito.</p>
+            <p>Todo esto se puede realizar en un if múltiple con operadores lógicos y else if combinados. Cuando
+                usamos el operador and, (&&), las condiciones tienen que ser verdaderas para que el flujo de
+                ejecución del programa entre en ese bloque if y corra lo que se encuentra ahí dentro.</p>
+            <p>Por otro lado, tenemos el operador or (||). En este caso al menos una de las condiciones tiene
+                que
+                ser verdadera para ejecutar lo que hemos programado dentro de su correspondiente bloque.</p>
+            <p>Finalmente, tenemos el operador not (!). Para que este funcione, la condición debe ser falsa.
+                También
+                este operador invierte el valor de una variable booleana.</p>
+
+            <h3>Sentencia switch case</h3>
+            <p>La sentencia switch case, evalúa una expresión comparándola con los diferentes case que la
+                componen.
+                Su flujo de ejecución es el siguiente:</p>
+            <ol>
+                <li>Switch (expresión a evaluar): Aquí se evalúa el valor de una variable y luego se compara con
+                    los
+                    case que se encuentran dentro de ella. Luego dentro de llaves tendremos las diferentes
+                    comparaciones.</li>
+
+                <li>Case: luego de esta palabra reservada añadimos 2 puntos(:) y en las siguientes líneas, lo
+                    que va
+                    a realizar el programa.</li>
+                <li>Break: Esta instrucción le dice al programa que rompa la ejecución y salga del bloque de
+                    código
+                    del case, y continúe con las demás instrucciones.</li>
+                <li>Default: Seguido de esta palabra añadimos 2 puntos(:) y aquí va lo que hará el programa si
+                    ninguno de los case son verdaderos.</li>
+            </ol>
+
+            <p>Veamos un ejemplo simple de una calculadora: Creamos una variable llamada opciones. Esta será un
+                string que va a contener los diferentes valores. así que dentro de los paréntesis de la
+                sentencia
+                switch, pasamos esta variable.</p>
+            <p>En el primer case escribimos suma. Este valor se pasará a la variable opciones y al momento,
+                entrará
+                en el case que contiene esta palabra y la calculadora hará la operación correspondiente. Todo
+                igual
+                con las demás operaciones.</p>
+            <p>finalmente, la instrucción default. El flujo de ejecución entrará aquí cuando ninguno de los case
+                coicida con los programados y ejecutará lo que esté aquí, generalmente un mensaje avisando de
+                una
+                operación fallida o algo parecido.</p>
+            <p>Esta sentencia es una estructura muy interesante, de igual manera dotando el código de
+                funcionalidades distintas. Visita el siguiente link para más información.</p>
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/switch"
+                target="_blank">Sentencia switch (Documentación de Mozilla)</a>
+
+<!--             <h3>Enlaces importantes</h3>
+            <div>
+                <ul>
+                    <li>
+                        <a href="codigos/tema3/condicionales.js" target="_blank">Accede al código</a>
+                    </li>
+                    <li>
+                        <a href="https://classroom.google.com/c/Njc3NjUwODMwMzkz/a/Njg0NDY1Njc4OTAz/details"
+                            target="_blank">Accede a la tarea</a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1_RjByrccHzSrade7iorhVBa02nkvMgdh/view?usp=sharing"
+                            target="_blank">Accede al video de la clase</a>
+                    </li>
+                </ul>
+            </div> -->
+
+        </article>
+    </section>
+    <footer>
+        <p>
+            Este contenido está bajo la licencia Creative commons 4.0.
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">Términos de la licencia</a>
+        </p>
+    </footer>    
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&subset=latin&display=swap');
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14pt;
+  background-color: #fafafa;
+  color: #000;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+h1 {
+  font-size: 2.625rem;
+  line-height: 1.5;
+  margin: 2.04225rem 0;
+}
+
+span {
+  display: block;
+}
+
+h2 {
+  font-size: 2.042rem;
+  line-height: 1.571rem;
+  margin: 1.603991rem 0;
+}
+
+h3 {
+  font-size: 1.625rem;
+  line-height: 1.615rem;
+  margin: 1.3121875rem 0;
+}
+
+h4 {
+  font-size: 1.292rem;
+  line-height: 1.645rem;
+  margin: 1.06267rem 0;
+}
+
+h5 {
+  font-size: 0.9rem;
+  line-height: 1.708rem;
+  margin: 0.7686rem 0;
+}
+
+h6 {
+  font-size: 0.792rem;
+  line-height: 1.737rem;
+  margin: 0.687852rem 0;
+}
+
+p,
+spam,
+blockquote,
+q,
+cite {
+  margin: 0.854rem 0;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.708rem;
+}
+
+a {
+  color: #212121;
+}
+
+em,
+cite {
+  font-style: normal;
+  font-weight: 500;
+}
+
+strong {
+  font-style: normal;
+  font-weight: 700;
+}
+
+blockquote,
+cite {
+  font-size: 1.292rem;
+  margin: 1.06267rem 0;
+  line-height: 1.645rem;
+  border: 1px solid #616161;
+  background-color: #eeeeee;
+}
+
+ul,
+ol {
+  padding: 0 0 0 1.7rem;
+  list-style-type: square;
+  line-height: 2.5;
+
+}
+
+hr {
+  border: none;
+  border-top: 0.3rem solid;
+}
+
+a[role="menuitem"],
+a[role="button"] {
+  font-weight: 500;
+  font-size: 1.292rem;
+  line-height: 1.645rem;
+  margin: 1.06267rem 0;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  background-color: #212121;
+  color: #fafafa;
+  transition: background-color .15s ease-in-out;
+}
+
+a[role="menuitem"]:hover,
+a[role="button"]:hover,
+a[role="menuitem"]:focus,
+a[role="button"]:focus {
+  background-color: #616161;
+  cursor: pointer;
+}
+
+a[role="menuitem"]:active,
+a[role="button"]:active {
+  background-color: #424242;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.aula {
+  display: flex;
+  text-align: center;
+}
+
+.section {
+  padding: 20px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.logo {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.menu li {
+  display: flex;
+  margin-right: 20px;
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+footer {
+  background-color: #000000;
+  width: 100%;
+  color: #ffffff;
+  margin-top: auto;
+}
