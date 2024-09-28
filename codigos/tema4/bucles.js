@@ -29,13 +29,12 @@ let numero = 0;
  */
 
 // Bucle finito
-while (numero <=11) {
-    numero++;
+while (numero <11) {
     // Uso de instrucción continue
+    numero++;
     if (numero === 5) {
         continue;
     }
-    // numero++;
     console.log("Hola mundo" + numero);
 
     // Uso de instrucción break
